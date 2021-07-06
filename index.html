@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<style>
+ h4, form, body {
+ text-align: center;
+ background-color:whitesmoke;
+ color: #010003;
+ }
+</style>
+<html>
+ <head><title>A Simple Form</title></head>
+ <body>
+ <h4><marquee>STUDENT DETAILS</marquee></h4>
+ <img src="Akul.jpg" width="175" height="175" >
+ <form>
+<div>
+    <label for="Name">Enter your Name : </label>
+    <input type="text" placeholder="Enter your Name" id="name" onkeyup="validate_name()">
+    <p id="na" style="color:red;"></p>
+    <br><br>
+</div>
+<div>
+    <label for="email">Enter your email : </label>
+    <input type="text" placeholder="xyz@.com" id="email"onkeyup="validate_email()">
+    <p id="em" style="color: red;"></p>
+    <br><br>
+</div>
+<div>
+    <label for="USN">Enter your USN : </label>
+    <input type="text"  placeholder="xxxxxxxxxx" id="usn" onkeyup="validate_usn()">
+    <p id="id" style="color: red;"></p>
+    <br><br>
+ </div>
+    <label >Select your branch : </label>
+ <label>
+    <input type="radio" name="branch" id="CSE">CSE
+ </label>
+ <label>
+    <input type="radio" name="branch" id="ME">ME
+ </label>
+ <label>
+    <input type="radio" name="branch" id="CV">CV
+ </label>
+ <label>
+    <input type="radio" name="branch" id="EEE">EEE
+</label>
+ <label>
+    <input type="radio" name="branch" id="ECE">ECE
+ </label><br><br>
+ <label for="semester">Semester : </label>
+ <select name="semester" id="semester">
+    <option value="2sem">Second</option>
+    <option value="4sem">Fourth</option>
+    <option value="6sem">Sixth</option>
+    <option value="8sem">Eighth</option>
+ </select> <br><br>
+ <label for='Interest'>Interest</label>
+ <select name="Interest" id="Interest">
+    <option value="GraphicsT">Graphics</option>
+    <option value="Flutter">Flutter</option>
+    <option value="Cloud">Cloud</option>
+    <option value="Data Science">Data Science</option>
+    <option value="Animation">Animation</option>
+ </select> <br><br>
+ <label for='WANT TO DO'>Future Aspects</label>
+ <select name="FUTURE" id="FUTURE">
+    <option value="HIGHER STUDIES">HIGHER STUDIES</option>
+    <option value="JOB">JOB</option>
+    <option value="ENTREPRENEUR">ENTREPRENEUR</option>
+ </select> <br><br>
+ <label>Languages known : </label>
+    <input type="checkbox" id="languages" name="German" value="German">
+ <label for="C">C</label>
+    <input type="checkbox" id="languages" name="Japanese" value="Japanese">
+ <label for="Python">Python</label>
+ <br><br>
+    <input type="submit" value="Submit" onclick="validation()">
+ </form>
+ <script src="./index.js"></script>
+ </body>
+ </html>
